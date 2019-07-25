@@ -46,8 +46,9 @@ _picture-in-picture() {
   video_width=${video_dimension[1]}; video_height=${video_dimension[2]}
 
   # Open video file.
-  vlc --qt-minimal-view --daemon --video-on-top --no-repeat --no-loop \
-      --qt-continue='0' --play-and-exit --no-video-title-show $video_file &> /dev/null
+  vlc --qt-minimal-view --daemon--video-on-top --no-repeat \
+      --no-loop --meta-title '__pnp__' --qt-continue='0' \
+      --play-and-exit --no-video-title-show $video_file &> /dev/null
 
   # Introduce delay for xdotool to locate VLC window.
   sleep ${ZPNP[RESIZE_SLEEP_TIME]}
@@ -66,10 +67,7 @@ _picture-in-picture() {
 
   # Locate active VLC window.
   local vlc_window_id
-  vlc_window_id=$(xdotool search --onlyvisible --name ${video_file:0:5})
-  if [[ -z $vlc_window_id ]]; then
-    vlc_window_id=$(xdotool search --onlyvisible --name vlc | tail -1)
-  fi
+  vlc_window_id=$(xdotool search --onlyvisible --name __pnp__)
 
   # Resize VLC window.
   xdotool windowsize $vlc_window_id $mini_video_width $mini_video_height
