@@ -87,9 +87,10 @@ picture-in-picture() {
 
   declare -a video_extensions
   video_extensions=(
-    mp4
-    mkv
-    avi
+    3g2 3gp amv asf avi drc f4p f4v flv
+    gif gifv m2ts m2v m4p m4v mkv mov mp2
+    mp4 mpe mpeg mpg mpv mts mxf ogg ogv
+    qt rm rmvb roq svi ts vob webm wmv yuv
   )
 
   local video_file="$1"
@@ -99,3 +100,4 @@ picture-in-picture() {
 }
 
 alias pxp='picture-in-picture'
+
