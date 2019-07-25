@@ -46,7 +46,7 @@ _picture-in-picture() {
   video_width=${video_dimension[1]}; video_height=${video_dimension[2]}
 
   # Open video file.
-  vlc --qt-minimal-view --daemon--video-on-top --no-repeat \
+  vlc --qt-minimal-view --daemon --video-on-top --no-repeat \
       --no-loop --meta-title '__pnp__' --qt-continue='0' \
       --play-and-exit --no-video-title-show $video_file &> /dev/null
 
