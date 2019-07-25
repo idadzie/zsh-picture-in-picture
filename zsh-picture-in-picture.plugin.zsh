@@ -99,5 +99,4 @@ picture-in-picture() {
   fi
 }
 
-alias pxp='picture-in-picture'
-
+alias pnp='picture-in-picture'

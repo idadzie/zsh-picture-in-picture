@@ -49,7 +49,7 @@ picture-in-picture VIDEO.mkv
 
 ### Alias
 
-`picture-in-picture` is aliased `pxp`.
+`picture-in-picture` is aliased `pnp`.
 
 
 
