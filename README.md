@@ -40,7 +40,11 @@ zplugin light idadzie/zsh-picture-in-picture
 ## Usage
 
 ```zsh
+# Open video.
 picture-in-picture VIDEO.mkv
+
+# Toggle window decorations.
+twind
 ```
 
 
@@ -101,6 +105,9 @@ ZPNP[USABLE_Y_SPACE]
 
 # Delay time (in seconds) for xdotool to find opened VLC window. Default: 0.5
 ZPNP[RESIZE_SLEEP_TIME] 
+
+# Toggle window decorations. Default: false
+ZPNP[TOGGLE_WINDOW_DECORATIONS]
 ```
 
 

@@ -32,6 +32,7 @@ display_height=${display_dimension[2]}
 : ${ZPNP[PRIMARY_Y_SPACE]:=$display_height}
 : ${ZPNP[USABLE_X_SPACE]:=$(echo "scale=0; (${ZPNP[PRIMARY_X_SPACE]} - ${ZPNP[X_AXIS_OFFSET]})" | bc)}
 : ${ZPNP[USABLE_Y_SPACE]:=$(echo "scale=0; (${ZPNP[PRIMARY_Y_SPACE]} - ${ZPNP[Y_AXIS_OFFSET]})" | bc)}
+: ${ZPNP[TOGGLE_WINDOW_DECORATIONS]:=false}
 
 _picture-in-picture() {
   [[ $# -eq 0 ]] && return
@@ -68,6 +69,11 @@ _picture-in-picture() {
   local vlc_window_id
   vlc_window_id=$(xdotool search --onlyvisible --name 'VLC media')
 
+  # Toggle window decorations.
+  if ${ZPNP[TOGGLE_WINDOW_DECORATIONS]}; then
+    (( $+commands[toggle-decorations] )) && toggle-decorations $vlc_window_id
+  fi
+
   # Resize VLC window.
   xdotool windowsize $vlc_window_id $mini_video_width $mini_video_height
 
@@ -77,6 +83,12 @@ _picture-in-picture() {
 
   # Move VLC window to desired location. Default: bottom-right of screen.
   xdotool windowmove $vlc_window_id $x_position $y_position
+}
+
+twind() {
+  (( $+commands[toggle-decorations] )) && {
+    toggle-decorations $(xdotool search --onlyvisible --name 'VLC media')
+  }
 }
 
 picture-in-picture() {
