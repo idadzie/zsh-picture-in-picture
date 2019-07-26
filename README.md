@@ -112,6 +112,12 @@ ZPNP[TOGGLE_WINDOW_DECORATIONS]
 
 
 
+## Disclaimer
+
+**Only tested on Ubuntu 18.04.**
+
+
+
 ## License
 
 The MIT License (MIT)
