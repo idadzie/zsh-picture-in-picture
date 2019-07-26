@@ -118,6 +118,12 @@ ZPNP[TOGGLE_WINDOW_DECORATIONS]
 
 
 
+## Credit
+
+Major props to [Alberts Muktupāvels][muktupavels] for the toggle-decorations lib.
+
+
+
 ## License
 
 The MIT License (MIT)
@@ -131,3 +137,4 @@ Copyright (c) 2019 idadzie
 [mediainfo]: https://mediaarea.net/en/MediaInfo
 [vlc]: https://www.videolan.org/
 [xdotool]: https://github.com/jordansissel/xdotool
+[muktupavels]: https://github.com/muktupavels
