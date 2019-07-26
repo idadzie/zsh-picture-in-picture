@@ -21,7 +21,7 @@ This plugin allows you to open a video with [VLC][vlc] simulating 'Picture-in-Pi
 
 Install Dependencies.
 ```zsh
-sudo apt-get install mediainfo xdotool vlc
+sudo apt-get install mediainfo xdotool vlc libx11-dev
 ```
 
 
@@ -31,7 +31,7 @@ sudo apt-get install mediainfo xdotool vlc
 Amazing Zsh plugin manager with clean fpath, reports, completion management, turbo mode etc.
 
 ```zsh
-zplugin ice wait'0' lucid
+zplugin ice wait'0' lucid make"PREFIX=$ZPFX"
 zplugin light idadzie/zsh-picture-in-picture
 ```
 
