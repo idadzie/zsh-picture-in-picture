@@ -1,6 +1,6 @@
 # zsh-picture-in-picture
 
-[![License: MIT][license icon]][license]
+[![License: MIT][license badge]][license] [![Maintenance][maintenance badge]]()
 
 This plugin allows you to open a video with [VLC][vlc] simulating 'Picture-in-Picture' while you interact with other applications.
 
@@ -130,8 +130,9 @@ The MIT License (MIT)
 
 Copyright (c) 2019 idadzie
 
-[license icon]: https://img.shields.io/badge/License-MIT-green.svg
+[license badge]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://opensource.org/licenses/MIT
+[maintenance badge]: https://img.shields.io/maintenance/yes/2020.svg
 [zplugin]: https://github.com/zdharma/zplugin
 [xdpyinfo]: http://manpages.ubuntu.com/manpages/trusty/man1/xdpyinfo.1.html
 [mediainfo]: https://mediaarea.net/en/MediaInfo
