@@ -132,7 +132,7 @@ Copyright (c) 2019 idadzie
 
 [license badge]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://opensource.org/licenses/MIT
-[maintenance badge]: https://img.shields.io/maintenance/yes/2020.svg
+[maintenance badge]: https://img.shields.io/maintenance/yes/2021.svg
 [zplugin]: https://github.com/zdharma/zplugin
 [xdpyinfo]: http://manpages.ubuntu.com/manpages/trusty/man1/xdpyinfo.1.html
 [mediainfo]: https://mediaarea.net/en/MediaInfo
